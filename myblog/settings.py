@@ -30,7 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['myblog-52lt.onrender.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
