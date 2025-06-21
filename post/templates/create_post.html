@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'post/styles.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "main_container">
+        <a data-analytics="" data-cta=""  href="{% url 'postlist' %}">Back</a>
+        <h1 class="page-title">New posts</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button data-analytics="" data-cta=""  type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- Style the create post page
+Order the posts in descending order  -->
+<!-- Change the delete functionality to a post request. The delete icon should be a button on a form. -->

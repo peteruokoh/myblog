@@ -1,0 +1,10 @@
+/* body{
+    background-color: aqua;
+} */
+
+.main_container{
+    border-style: solid;
+    border-width: 2px;
+    border-color: brown;
+    background-color: cadetblue;
+}
